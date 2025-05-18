@@ -1,0 +1,54 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 238, 234);
+  /* min-height: 100vh; */
+}
+
+#container-api {
+  /* background-color: rgba(101, 101, 139, 0.506); */
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 40vh;
+  width: 20%;
+  border: 2px solid black;
+  margin: 3rem;
+}
+
+.cities {
+  background-color: rgba(174, 169, 169, 0.463);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.populations {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.populations img {
+  width: 100%;
+}
+
+.regions {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(125, 117, 117, 0.176);
+  align-items: center;
+  justify-content: center;
+}
