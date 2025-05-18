@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Marhey:wght@300..700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
 * {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
 }
+
+
+
 
 body {
   background-color: rgb(241, 238, 234);
@@ -13,10 +20,7 @@ body {
   /* background-color: rgba(101, 101, 139, 0.506); */
   min-height: 100vh;
   width: 100%;
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center; */
+  
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 10px;
@@ -28,11 +32,12 @@ body {
 .card {
   height: 60vh;
   width: 100%;
-  border: 2px solid black;
+  border: 2px solid rgba(198, 195, 195, 0.39);
   margin: 3rem;
   /* gap: 10px; */
   align-items: center;
   text-align: center;
+  border-radius: 10px;
 }
 
 .cities {
@@ -68,6 +73,7 @@ body {
   #container-api {
     /* background-color: rgba(101, 101, 139, 0.506); */
     min-height: 50vh;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -93,3 +99,36 @@ body {
     width: 50%;
   }
 }
+
+
+@media (max-height: 400px) {
+    #container-api {
+      background-color: rgba(218, 71, 34, 0.506);
+      min-height: 50vh;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .card {
+      height: 30vh;
+      /* width: 20%; */
+      border: 2px solid black;
+      /* margin: 3rem; */
+      align-items: center;
+      text-align: center;
+    }
+  
+    .populations {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .populations img {
+      width: 50%;
+    }
+  }
+  
