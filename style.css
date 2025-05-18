@@ -53,6 +53,11 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  p{
+    font-size: 10px;
+  }
+
 }
 .populations img {
   width: 100%;
