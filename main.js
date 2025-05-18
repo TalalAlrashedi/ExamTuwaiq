@@ -32,8 +32,8 @@ const getCities = async () => {
       
       // console.log(city.languages); //it' array need for loop alone
       let langs = document.createElement("p");
-    //   let langs = city.languages;
       langs.innerText = city.languages;
+      langs.className = ".populations img"
       // console.log(city.maps.googleMaps);
       let maps = document.createElement("p");
       maps.innerText = city.maps.googleMaps;
